@@ -24,9 +24,14 @@ export default {
   padding: 0;
   box-sizing: border-box;
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Open-sans", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
+@font-face {
+  font-family: "Open-sans";
+  src: local("Open-Sans"),
+   url(./font/openSans/static/OpenSans/OpenSans-Regular.ttf) format("truetype");
 }
 </style>
