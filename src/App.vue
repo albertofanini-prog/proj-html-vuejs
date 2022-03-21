@@ -3,6 +3,7 @@
     <TheHeader/>
     <TheJumbotron/>
     <TheRecordsSection/>
+    <TheTrailerSection/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import TheHeader from './components/TheHeader.vue'
 import TheJumbotron from './components/TheJumbotron.vue'
 import TheRecordsSection from './components/TheRecordsSection.vue'
+import TheTrailerSection from './components/TheTrailerSection.vue'
 
 export default {
   name: 'App',
   components: {
     TheHeader,
     TheJumbotron,
-    TheRecordsSection
+    TheRecordsSection,
+    TheTrailerSection
   }
 }
 </script>
