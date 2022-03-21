@@ -5,6 +5,21 @@
             <p>Distant Mentoring Program</p>
             <button>Download free guidebook</button>
         </div>
+            <div class="right_banner">
+                <button>
+                    1
+                </button>
+                <button>
+                    2
+                </button>
+                    
+                <button>
+                    3
+                </button>
+                <button>
+                    4
+                </button>
+            </div>
     </div>
 </template>
 
@@ -25,6 +40,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         .jumbotron_content{
             // border: 2px solid yellow;
             width: 60%;
@@ -49,6 +65,20 @@ export default {
                 color: #1fad95;
                 font-weight: 600;
                 font-size: 14px;
+            }
+        }
+        .right_banner{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: absolute;
+            top: 40%;
+            right: 0;
+            button{
+                width: 20px;
+                height: 30px;
+                border: none;
+
             }
         }
     }

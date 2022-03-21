@@ -35,6 +35,6 @@ export default {
 @font-face {
   font-family: "Open-sans";
   src: local("Open-Sans"),
-   url(./font/openSans/static/OpenSans/OpenSans-Regular.ttf) format("truetype");
+  url(./font/openSans/static/OpenSans/OpenSans-Regular.ttf) format("truetype");
 }
 </style>
