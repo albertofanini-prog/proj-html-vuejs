@@ -17,7 +17,7 @@ export default {
 <style lang="scss">
     .jumbotron{
         width: 100%;
-        height: 500px;
+        height: 700px;
         background-image: url('~@/assets/jumbotron.jpg');
         background-size: cover;
         background-repeat: no-repeat;
