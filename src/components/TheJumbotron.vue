@@ -21,6 +21,7 @@ export default {
         background-image: url('~@/assets/jumbotron.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;

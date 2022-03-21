@@ -20,11 +20,38 @@
                 </div>
             </div>
             <div class="records_images">
-
+                <div class="image_area">
+                    <img class="bottom_one" src="../assets/semi-circle.png">
+                    <img class="top_back" src="../assets/grid_150x150.png">
+                    <img class="top_front" src="../assets/person_working.jpg">
+                </div>
             </div>
         </div>
         <div class="data_container">
-
+            <div class="data_item">
+                <h1 class="water">
+                    129+
+                </h1>
+                <p>
+                    Enrolled learness
+                </p>
+            </div>
+            <div class="data_item">
+                <h1 class="water">
+                    80
+                </h1>
+                <p>
+                    finished sessions
+                </p>
+            </div>
+            <div class="data_item">
+                <h1 class="water">
+                    4%
+                </h1>
+                <p>
+                    satisfaction rate
+                </p>
+            </div>
         </div>
     </section>
 </template>
@@ -38,18 +65,18 @@ export default {
 <style lang="scss">
     .records{
         width: 100%;
-        height: 1000px;
-        border: 8px solid yellow;
+        height: 700px;
+        // border: 8px solid yellow;
         display: flex;
         flex-direction: column;
         .main_container{
-            border: 5px solid blue;
+            // border: 5px solid blue;
             width: 100%;
             height: 80%;
             display: flex;
             align-items: center;
             .records_text{
-                border: 3px dashed green;
+                // border: 3px dashed green;
                 width: 50%;
                 height: 100%;
                 display: flex;
@@ -63,7 +90,7 @@ export default {
                     .text{
                         width: 70%;
                         // border: 1px solid red;
-                        padding: 10px 10px;
+                        padding: 0px 10px;
                         h6{
                             text-transform: uppercase;
                             font-size: 14px;
@@ -91,22 +118,80 @@ export default {
                         justify-content: flex-end;
                         img{
                             margin-top: 10%;
-                            width: 50%;
-                            height: 15%;
+                            width: 45%;
+                            height: 20%;
                         }
                     }
                 }
             }
             .records_images{
-                border: 3px dashed green;
+                // border: 3px dashed green;
                 width: 50%;
                 height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .image_area{
+                    width: 60%;
+                    height: 50%;
+                    // border: 1px solid red;
+                    background-image: url('~@/assets/people-talking.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: relative;
+                    z-index: 9999;
+                    .bottom_one{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        transform: translate(-50%, 70%);
+                        width: 15%;
+                    }
+                    .top_back{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translate(0%, -30%);
+                        width: 25%;
+                        z-index: 1;
+                    }
+                    .top_front{
+                        position: absolute;
+                        width: 25%;
+                        top: 0;
+                        right: 0;
+                        transform: translate(20%, -30%);
+                        z-index: 2;
+                    }
+                }
             }
         }
         .data_container{
-            border: 5px solid blue;
+            // border: 5px solid blue;
             width: 100%;
             height: 20%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px 15%;
+            .data_item{
+                width: calc(100% / 3);
+                height: 80%;
+                // border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    font-size: 48px;
+                    font-weight: 700;
+                }
+                p{
+                    text-transform: uppercase;
+                    font-size: 16px;
+                }
+            }
         }
         .water{
             color: #1fad95;
