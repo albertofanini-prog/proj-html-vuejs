@@ -64,6 +64,7 @@ export default {
 
 <style lang="scss">
     .records{
+        background-color: #F7F7F7;
         width: 100%;
         height: 700px;
         // border: 8px solid yellow;

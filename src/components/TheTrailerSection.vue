@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss">
     .trailer_section{
+        background-color: #F7F7F7;
         width: 100%;
         height: 900px;
         // border: 5px solid green;

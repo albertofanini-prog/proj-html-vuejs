@@ -63,8 +63,20 @@
                 </div>
             </div>
         </div>
+            <div class="points">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         <div class="view-more_container">
-
+            <p>
+                Control your personal settings to get notified about
+                appropriate courses. <span>View all courses</span>
+            </p>
         </div>
     </section>
 </template>
@@ -77,13 +89,14 @@ export default {
 
 <style lang="scss">
     .thelatestcourses_section{
+        background-color: #F7F7F7;
         width: 100%;
         height: 800px;
-        border: 7px solid red;
+        // border: 7px solid red;
         .title_container{
             width: 50%;
             height: 20%;
-            border: 5px solid yellow;
+            // border: 5px solid yellow;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -104,7 +117,7 @@ export default {
         .slider_container{
             width: 100%;
             height: 65%;
-            border: 5px solid yellow;
+            // border: 5px solid yellow;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -113,11 +126,11 @@ export default {
             .course-card{
                 width: calc(100% / 3);
                 height: 90%;
-                border: 3px solid green;
+                // border: 3px solid green;
                 .card-image{
                     width: 100%;
                     height: 55%;
-                    border: 2px dashed blue;
+                    // border: 2px dashed blue;
                     img{
                         width: 100%;
                         height: 100%;
@@ -126,7 +139,7 @@ export default {
                 .card-text{
                     width: 100%;
                     height: 45%;
-                    border: 2px dashed blue;
+                    // border: 2px dashed blue;
                     padding: 20px;
                     span{
                         font-size: 24px;
@@ -150,13 +163,41 @@ export default {
                             width: 50%;
                         }
                     }
-                }            
+                }
+            }
+        }
+        .points{
+            height: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul{
+                width: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li{
+                    width: 1px;
+                };
             }
         }
         .view-more_container{
             width: 50%;
-            height: 15%;
-            border: 5px solid yellow;
+            height: 10%;
+            // border: 5px solid yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{  
+                width: 50%;
+                color: #6c6c6b;
+                font-size: 18px;
+                text-align: center;
+                span{
+                    color: black;
+                    font-weight: 700;
+                }
+            }
         }
         .water{
             color: #1fad95;
