@@ -114,7 +114,7 @@ export default {
             gap: 10%;
             .artist-card{
                 width: calc(100% / 3);
-                height: 90%;
+                height: 100%;
                 // border: 3px solid green;
                 box-shadow: 
                     0 1px 1px rgba(0,0,0,0.11),                                 0 2px 2px rgba(0,0,0,0.11), 
