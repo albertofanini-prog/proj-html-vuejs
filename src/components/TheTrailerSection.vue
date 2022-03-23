@@ -71,11 +71,13 @@ export default {
                         0 8px 8px rgba(0,0,0,0.11), 
                         0 16px 16px rgba(0,0,0,0.11), 
                         0 32px 32px rgba(0,0,0,0.11);
+                    border-radius: 15px;
                     .video{
                         width: 100%;
                         height: 100%;
                         position: absolute;
                         z-index: 40;
+                        border-radius: 15px;
                     }
                     .youtube_player{
                         position: absolute;

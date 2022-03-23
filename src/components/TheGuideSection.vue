@@ -10,7 +10,18 @@
             </div>
         </div>
         <div class="guide_text">
-
+            <div class="guide_title">
+                <div class="title">                        
+                    <h6>everything in <span class="bold">maxcoach</span></h6>
+                    <h3>We're Here To <span class="water">Transform</span> You!</h3>
+                    <p>
+                        As leaners, people can enjoy great companionship from
+                        MaxCoach mentors and educators. We can help you
+                        develop and grow at your best.
+                    </p>
+                    <button class="get_guide">Get free guide</button>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -64,7 +75,7 @@ export default {
                     transform: translate(100%, 60%);
                     max-width: 150px;
                     max-height: 150px;
-                    filter: invert(53%) sepia(64%) saturate(405%) hue-rotate(121deg) brightness(93%) contrast(100%);
+                    filter: invert(78%) sepia(46%) saturate(235%) hue-rotate(120deg) brightness(95%) contrast(87%);
                 }
                 .rombo{
                     position: absolute;
@@ -84,7 +95,56 @@ export default {
         .guide_text{
             width: 50%;
             height: 90%;
-            border: 5px solid green;
+            // border: 5px solid green;
+            display: flex;
+            .guide_title{
+                width: 80%;
+                height: 100%;
+                // border: 3px solid green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .title{
+                    width: 65%;
+                    // border: 1px solid red;
+                    padding: 0px 10px;
+                    .bold{
+                        font-weight: 700;
+                    }
+                    h6{
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        color: #6c6c6b;
+                    }
+                    h3{
+                        font-size: 48px;
+                        font-weight: 700;
+                        .water{
+                            color: #1fad95;
+                            font-weight: 500;
+                        }
+                    }
+                    p{
+                        font-size: 18px;
+                        color: #6c6c6b;
+                    }
+                    button{
+                        width: 50%;
+                        height: 45px;
+                        margin-top: 20px;
+                        padding: 10px;
+                        border: none;
+                        background-color: #20ad96;
+                        color: white;
+                        font-size: 12px;
+                        border-radius: 5px;
+                    }
+                }
+                .text > *{
+                    padding: 10px 0px;
+                }
+            }
         }
     }
 </style>
