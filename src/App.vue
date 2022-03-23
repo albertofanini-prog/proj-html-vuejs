@@ -5,6 +5,8 @@
     <TheRecordsSection/>
     <TheTrailerSection/>
     <TheLatestCoursesSection/>
+    <TheTestimonialsSection/>
+    <TheGuideSection/>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import TheJumbotron from './components/TheJumbotron.vue'
 import TheRecordsSection from './components/TheRecordsSection.vue'
 import TheTrailerSection from './components/TheTrailerSection.vue'
 import TheLatestCoursesSection from './components/TheLatestCoursesSection.vue'
+import TheTestimonialsSection from './components/TheTestimonialsSection.vue'
+import TheGuideSection from './components/TheGuideSection.vue'
 
 export default {
   name: 'App',
@@ -22,7 +26,9 @@ export default {
     TheJumbotron,
     TheRecordsSection,
     TheTrailerSection,
-    TheLatestCoursesSection
+    TheLatestCoursesSection,
+    TheTestimonialsSection,
+    TheGuideSection
   }
 }
 </script>

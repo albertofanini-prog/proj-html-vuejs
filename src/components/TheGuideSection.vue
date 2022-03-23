@@ -38,7 +38,7 @@ export default {
             justify-content: center;
             .images_container{
                 height: 80%;
-                width: 80%;
+                width: 90%;
                 // border: 3px solid yellow;
                 position: relative;
                 .team{
@@ -50,14 +50,15 @@ export default {
                 }
                 .square{
                     position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    transform: translate(-130%, 30%);
+                    bottom: 5%;
+                    right: 10%;
+                    transform: translate(-80%, 50%);
+                    width: 175px;
                 }
                 .cloud{
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: 10%;
+                    left: 10%;
                     transform: translate(100%, 60%);
                     max-width: 150px;
                     max-height: 150px;
@@ -65,15 +66,15 @@ export default {
                 }
                 .rombo{
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: 15%;
+                    left: 5%;
                     transform: translate(50%, 90%);
                 }
                 .linee{
                     position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    transform: translate(-50%, -90%);
+                    left: 5%;
+                    bottom: 2%;
+                    transform: translate(-0%, -90%);
                 }
             }
         }

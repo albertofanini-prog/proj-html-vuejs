@@ -93,6 +93,10 @@ export default {
         width: 100%;
         height: 800px;
         // border: 7px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         .title_container{
             width: 50%;
             height: 20%;
@@ -116,7 +120,7 @@ export default {
         }
         .slider_container{
             width: 100%;
-            height: 65%;
+            height: 60%;
             // border: 5px solid yellow;
             display: flex;
             align-items: center;
@@ -127,6 +131,13 @@ export default {
                 width: calc(100% / 3);
                 height: 90%;
                 // border: 3px solid green;
+                box-shadow: 
+                    0 1px 1px rgba(0,0,0,0.11),                                 0 2px 2px rgba(0,0,0,0.11), 
+                    0 4px 4px rgba(0,0,0,0.11), 
+                    0 8px 8px rgba(0,0,0,0.11), 
+                    0 16px 16px rgba(0,0,0,0.11), 
+                    0 32px 32px rgba(0,0,0,0.11);
+                border-radius: 20px;
                 .card-image{
                     width: 100%;
                     height: 55%;
@@ -134,6 +145,7 @@ export default {
                     img{
                         width: 100%;
                         height: 100%;
+                        border-radius: 20px 20px 0px 0px;
                     }
                 }
                 .card-text{
@@ -174,6 +186,7 @@ export default {
             ul{
                 width: 15%;
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 justify-content: center;
                 li{
@@ -202,6 +215,6 @@ export default {
         .water{
             color: #1fad95;
             font-weight: 500;
-        }        
+        }
     }
 </style>
