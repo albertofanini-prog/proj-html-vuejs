@@ -2,12 +2,12 @@
     <div class="navbar_container">
         <div class="navbar_item">
             <ul class="pages_list">
-                <li>Home </li>
-                <li>Pages </li>
-                <li>Courses </li>
-                <li>Features </li>
-                <li>Blog </li>
-                <li>Shop </li>
+                <li>Home <img src="../assets/Icons/angle-down-solid.svg"> </li>
+                <li>Pages <img src="../assets/Icons/angle-down-solid.svg"></li>
+                <li>Courses <img src="../assets/Icons/angle-down-solid.svg"></li>
+                <li>Features <img src="../assets/Icons/angle-down-solid.svg"></li>
+                <li>Blog <img src="../assets/Icons/angle-down-solid.svg"></li>
+                <li>Shop <img src="../assets/Icons/angle-down-solid.svg"></li>
             </ul>
         </div>
         <div class="navbar_item">
@@ -16,15 +16,15 @@
         <div class="navbar_item">
             <ul class="buttons_list">
                 <li class="cart">
-                    cart
+                    <img src="../assets/Icons/cart-shopping-solid.svg" alt="">
                 </li>
                 <li class="user">
-                    user
+                    <img src="../assets/Icons/circle-user-solid.svg" alt="">
                 </li>
                 <li class="input">
                     <form class="searchbar" action="search">
                         <input type="text" placeholder="Search...">
-                        <button>lens</button>
+                        <button><img class="len_img" src="../assets/Icons/magnifying-glass-solid.svg" alt=""></button>
                     </form>
                 </li>
             </ul>
@@ -35,6 +35,16 @@
 <script>
 export default {
     name: 'TheHeader',
+    data(){
+        return{
+            navbarItems:[
+                {
+                    name: 'Home',
+                    pic: '../assets/Icons/angle-down-solid.svg'
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -53,6 +63,7 @@ export default {
             height: 100%;
             display: flex;
             align-items: center;
+            justify-content: center;
             .pages_list{
                 width: 100%;
                 height: 100%;
@@ -71,6 +82,9 @@ export default {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    img{
+                        width: 12px;
+                    }
                 }
             }
             .buttons_list{
@@ -82,18 +96,19 @@ export default {
                 display: flex;
                 align-items: center;
                 gap: 5px;
+                justify-content: center;
                 li{
                     height: 80%;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
                     font-size: 14px;
                 }
                 .cart, .user{
-                    width: 25%;
+                    img{
+                        width: 20px;
+                    }
                 }
                 .input{
-                    flex-grow: 1;
                     .searchbar{
                         display: flex;
                         height: 70%;
@@ -103,6 +118,17 @@ export default {
                             padding: 5px;
                             border: none;
                         }
+                        input{
+                            border-radius: 5px 0px 0px 5px;
+                            padding: 0px 10px;
+                        }
+                        button{
+                            border-radius: 0px 5px 5px 0px;
+                        }
+                        .len_img{
+                            width: 70%;
+                            height: 70%;
+                        }
                     }
                 }
             }
@@ -110,6 +136,9 @@ export default {
                 width: 45%;
                 height: 50%;
             }
+        }
+        .navbar_item:nth-child(1){
+            flex-grow: 1;
         }
     }
 </style>

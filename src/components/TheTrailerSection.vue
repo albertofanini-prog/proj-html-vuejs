@@ -21,7 +21,7 @@
                             new skills for new sets of insights into your career.
                             MaxCoach accompany learners in every stage of learning.
                         </p>
-                        <button>Download free guidebook</button>
+                        <button>Download free guidebook <img src="../assets/Icons/right-long-solid.svg"></button>
                     </div>
                 </div>
             </div>
@@ -152,6 +152,10 @@ export default {
                             border: 1px solid black;
                             box-shadow: 10px;
                             font-size: 12px;
+                            img{
+                                width: 15px;
+                                height: 10px;
+                            }
                         }
                     }
                     .text > *{

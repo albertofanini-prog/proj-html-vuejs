@@ -47,7 +47,7 @@ export default {
 <style lang="scss">
     footer{
         width: 100%;
-        height: 500px;
+        height: 400px;
         border: 7px solid red;
         display: flex;
         flex-direction: column;
@@ -63,7 +63,7 @@ export default {
             color: #8b8b90;
             .address_wrapper{
                 width: 50%;
-                height: 40%;
+                height: 60%;
                 border: 3px solid green;
                 display: flex;
                 flex-direction: column;
@@ -92,7 +92,7 @@ export default {
                 .first{
                     border: 1px solid red;
                     width: 60%;
-                    height: 40%;
+                    height: 60%;
                     list-style: none;
                     display: flex;
                     flex-direction: column;
@@ -121,7 +121,7 @@ export default {
                 .second{
                     border: 1px solid red;
                     width: 40%;
-                    height: 40%;
+                    height: 60%;
                     list-style: none;
                     display: flex;
                     flex-direction: column;
@@ -143,6 +143,7 @@ export default {
                         li{
                             width: 100%;
                             font-size: 16px;
+                            height: 25%;
                         }
                     }
                 }

@@ -7,17 +7,17 @@
         </div>
             <div class="right_banner">
                 <button>
-                    1
+                    <img src="../assets/Icons/stairs-solid.svg">
                 </button>
                 <button>
-                    2
+                    <img src="../assets/Icons/globe-solid.svg">
                 </button>
                     
                 <button>
-                    3
+                    <img src="../assets/Icons/book-solid.svg">
                 </button>
                 <button>
-                    4
+                    <img src="../assets/Icons/cart-shopping-solid.svg">
                 </button>
             </div>
     </div>
@@ -74,11 +74,21 @@ export default {
             position: absolute;
             top: 40%;
             right: 0;
+            height: 150px;
+            border-radius: 0px 0px 5px 5px;
+            .right_banner:first-child{
+                border-radius: 0px 0px 5px 5px;
+            }
             button{
-                width: 20px;
-                height: 30px;
+                width: 100%;
+                height: calc(100% / 4);
                 border: none;
-
+                padding: 5px;
+                cursor: pointer;
+                img{
+                    width: 70%;
+                    height: 70%;
+                }
             }
         }
     }

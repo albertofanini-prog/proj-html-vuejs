@@ -16,7 +16,7 @@
                     <h6>Learning to Write as a Professional Author</h6>
                     <div class="info">
                         <div class="lessons">
-                            20 Lessons
+                            <img src="../assets/Icons/newspaper-solid.svg" alt=""> 20 Lessons
                         </div>
                         <div class="subscribes">
                             50 Subscribes
@@ -35,7 +35,7 @@
                     <h6>Customer-centric info-Tech Strategies</h6>
                     <div class="info">
                         <div class="lessons">
-                            24 Lessons
+                            <img src="../assets/Icons/newspaper-solid.svg" alt=""> 24 Lessons
                         </div>
                         <div class="subscribes">
                             300 Subscribes
@@ -54,7 +54,7 @@
                     <h6>Open Programming Courses for Everyone: Python</h6>
                     <div class="info">
                         <div class="lessons">
-                            37 Lessons
+                            <img src="../assets/Icons/newspaper-solid.svg" alt=""> 37 Lessons
                         </div>
                         <div class="subscribes">
                             62 Subscribes
@@ -173,6 +173,11 @@ export default {
                         font-size: 14px;
                         > * {
                             width: 50%;
+                        }
+                        .lessons{
+                            img{
+                                width: 10px;
+                            }
                         }
                     }
                 }
