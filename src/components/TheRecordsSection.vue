@@ -147,12 +147,14 @@ export default {
                     background-position: center;
                     position: relative;
                     z-index: 9999;
+                    border-radius: 7px;
                     .bottom_one{
                         position: absolute;
                         bottom: 0;
                         right: 0;
                         transform: translate(-50%, 70%);
                         width: 15%;
+                        border-radius: 7px;
                     }
                     .top_back{
                         position: absolute;
@@ -169,6 +171,7 @@ export default {
                         right: 0;
                         transform: translate(20%, -30%);
                         z-index: 2;
+                        border-radius: 7px;
                     }
                 }
             }

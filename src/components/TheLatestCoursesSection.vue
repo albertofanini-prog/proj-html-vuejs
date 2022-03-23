@@ -66,16 +66,12 @@
             <div class="points">
                 <ul>
                     <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                 </ul>
             </div>
         <div class="view-more_container">
             <p>
                 Control your personal settings to get notified about
-                appropriate courses. <span>View all courses</span>
+                appropriate courses. <span>View all courses <img src="../assets/Icons/right-long-solid.svg"></span>
             </p>
         </div>
     </section>
@@ -214,6 +210,10 @@ export default {
                 span{
                     color: black;
                     font-weight: 700;
+                    img{
+                        width: 10px;
+                        height: 10px;
+                    }
                 }
             }
         }

@@ -152,6 +152,7 @@ export default {
                             border: 1px solid black;
                             box-shadow: 10px;
                             font-size: 12px;
+                            box-shadow: 0px 0px 1px 1px black;
                             img{
                                 width: 15px;
                                 height: 10px;
