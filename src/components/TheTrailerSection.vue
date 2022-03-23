@@ -3,6 +3,7 @@
         <div class="trailer_container">
             <div class="trailer_player">
                 <div class="player_area">
+                    <img class="video" src="../assets/phone_call.jpg">
                     <img class="youtube_player" src="../assets/youtube-play.png" alt="">
                     <img class="cloud" src="../assets/cloud.svg">
                     <img class="rombo" src="../assets/rombo.png">
@@ -58,10 +59,10 @@ export default {
                     width: 70%;
                     height: 75%;
                     // border: 1px solid red;
-                    background-image: url('~@/assets/phone_call.jpg');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
+                    // background-image: url('~@/assets/phone_call.jpg');
+                    // background-size: cover;
+                    // background-repeat: no-repeat;
+                    // background-position: center;
                     position: relative;
                     z-index: 9999;
                     box-shadow: 
@@ -70,12 +71,19 @@ export default {
                         0 8px 8px rgba(0,0,0,0.11), 
                         0 16px 16px rgba(0,0,0,0.11), 
                         0 32px 32px rgba(0,0,0,0.11);
+                    .video{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 40;
+                    }
                     .youtube_player{
                         position: absolute;
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
                         cursor: pointer;
+                        z-index: 41;
                     }
                     .cloud{
                         width: 125px;

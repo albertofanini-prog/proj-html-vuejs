@@ -135,7 +135,6 @@ export default {
                                 0 16px 16px rgba(0,0,0,0.11), 
                                 0 32px 32px rgba(0,0,0,0.11);
                     border-radius: 20px;
-                    z-index: 10;
                     .testimoniance{
                         font-weight: 700;
                         height: 5%;
@@ -190,8 +189,6 @@ export default {
                                 0 16px 16px rgba(0,0,0,0.11), 
                                 0 32px 32px rgba(0,0,0,0.11);
                     border-radius: 20px;
-                    z-index: 9999;
-                    opacity: 1;
                     h5{
                         height: 20%;
                         font-size: 22px;

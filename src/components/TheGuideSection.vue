@@ -42,11 +42,13 @@ export default {
                 // border: 3px solid yellow;
                 position: relative;
                 .team{
+                    position: absolute;
                     top: 0;
                     left: 0;
                     transform: translate(35%, 5%);
                     width: 70%;
                     height: 90%;
+                    z-index: 10;
                 }
                 .square{
                     position: absolute;
@@ -62,13 +64,14 @@ export default {
                     transform: translate(100%, 60%);
                     max-width: 150px;
                     max-height: 150px;
-                    filter: invert(53%) sepia(64%) saturate(405%) hue-rotate(121deg) brightness(93%) contrast(95%);
+                    filter: invert(53%) sepia(64%) saturate(405%) hue-rotate(121deg) brightness(93%) contrast(100%);
                 }
                 .rombo{
                     position: absolute;
                     top: 15%;
                     left: 5%;
                     transform: translate(50%, 90%);
+                    z-index: 9;
                 }
                 .linee{
                     position: absolute;
