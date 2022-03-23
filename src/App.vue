@@ -9,6 +9,7 @@
     <TheGuideSection/>
     <TheArtistsSection/>
     <TheNewsletterSection/>
+    <TheFooter/>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import TheTestimonialsSection from './components/TheTestimonialsSection.vue'
 import TheGuideSection from './components/TheGuideSection.vue'
 import TheArtistsSection from './components/TheArtistsSection.vue'
 import TheNewsletterSection from './components/TheNewsletterSection.vue'
+import TheFooter from './components/TheFooter.vue'
 
 export default {
   name: 'App',
@@ -34,7 +36,8 @@ export default {
     TheTestimonialsSection,
     TheGuideSection,
     TheArtistsSection,
-    TheNewsletterSection
+    TheNewsletterSection,
+    TheFooter
   }
 }
 </script>

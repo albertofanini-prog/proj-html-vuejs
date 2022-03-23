@@ -32,7 +32,7 @@ export default {
 <style lang="scss">
     .newsletter_section{
         width: 100%;
-        height: 400px;
+        height: 350px;
         // border: 7px solid red;
         display: flex;
         align-items: center;
@@ -44,7 +44,7 @@ export default {
             align-items: center;
             img{
                 width: 17%;
-                height: 30%;
+                height: 35%;
             }
         }
         .form{
