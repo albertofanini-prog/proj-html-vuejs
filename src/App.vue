@@ -7,6 +7,7 @@
     <TheLatestCoursesSection/>
     <TheTestimonialsSection/>
     <TheGuideSection/>
+    <TheArtistsSection/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import TheTrailerSection from './components/TheTrailerSection.vue'
 import TheLatestCoursesSection from './components/TheLatestCoursesSection.vue'
 import TheTestimonialsSection from './components/TheTestimonialsSection.vue'
 import TheGuideSection from './components/TheGuideSection.vue'
+import TheArtistsSection from './components/TheArtistsSection.vue'
 
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     TheTrailerSection,
     TheLatestCoursesSection,
     TheTestimonialsSection,
-    TheGuideSection
+    TheGuideSection,
+    TheArtistsSection
   }
 }
 </script>
