@@ -7,9 +7,12 @@
                         Address
                     </h6>
                     <ul>
-                        <li>382 NE 191st St # 87394 Miami, FL 33179-3899</li>
-                        <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</li>
-                        <li>support@maxcoach.com</li>
+                        <li
+                        v-for="(addressItem, i) in addressItems"
+                        :key="i"
+                        >
+                            {{addressItem.content}}
+                        </li>
                         <li>
                             <img src="../assets/Icons/facebook-brands.svg" alt="">
                             <img src="../assets/Icons/twitter-brands.svg" alt="">
@@ -23,21 +26,23 @@
                 <div class="first">
                     <h6>Explore</h6>
                     <ul>
-                        <li>Start here</li>
-                        <li>Blog</li>
-                        <li>About us</li>
-                        <li>Success story</li>
-                        <li>Courses</li>
-                        <li>Contact us</li>
+                        <li
+                        v-for="(exploreItem, i) in exploreItems"
+                        :key="i"
+                        >
+                            {{exploreItem.explore}}
+                        </li>
                     </ul>
                 </div>
                 <ul class="second">
                     <h6>Information</h6>
                     <ul>
-                        <li>Membership</li>
-                        <li>Purchase guide</li>
-                        <li>Privacy policy</li>
-                        <li>Terms of service</li>
+                        <li
+                        v-for="(informationItem, i) in informationItems"
+                        :key="i"
+                        >
+                            {{informationItem.info}}
+                        </li>
                     </ul>
                 </ul>
             </div>
@@ -53,7 +58,56 @@
 
 <script>
 export default {
-    
+    name: 'TheFooter',
+    data(){
+        return{
+            addressItems:[
+                {
+                    content: '382 NE 191st St # 87394 Miami, FL 33179-3899'
+                },
+                {
+                    content: '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)'
+                },
+                {
+                    content: 'support@maxcoach.com'
+                },
+            ],
+            exploreItems:[
+                {
+                    explore: 'Start here'
+                },
+                {
+                    explore: 'About us'
+                },
+                {
+                    explore: 'Courses'
+                },
+                {
+                    explore: 'Blog'
+                },
+                {
+                    explore: 'Success story'
+                },
+                {
+                    explore: 'Contact us'
+                },
+            ],
+            informationItems:[
+                {
+                    info: 'Membership'
+                },
+                {
+                    info: 'Purchase guide'
+                },
+                {
+                    info: 'Privacy policy'
+                },
+                {
+                    info: 'Terms of service'
+                },
+            ]
+        }
+    }
 }
 </script>
 
