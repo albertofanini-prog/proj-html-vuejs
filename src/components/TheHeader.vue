@@ -87,10 +87,10 @@ export default {
                 display: flex;
                 align-items: center;
                 // justify-content: center;
-                gap: 5px;
+                gap: 10px;
                 li{
                     // border: 1px solid purple;
-                    width: calc((100% / 6) - 5px);
+                    width: calc(100% / 6);
                     text-align: center;
                     font-size: 14px;
                     height: 80%;
@@ -100,6 +100,7 @@ export default {
                     cursor: pointer;
                     img{
                         width: 12px;
+                        margin-left: 3px;
                     }
                 }
             }
@@ -157,6 +158,98 @@ export default {
         }
         .navbar_item:nth-child(1){
             flex-grow: 1;
+        }
+    }
+
+    //Desktops, large screen
+    @media (max-width: 1200px){
+        .navbar_container{
+            .navbar_item{
+                .pages_list{
+                    li{
+                        font-size: 12px;
+                        img{
+                            margin-left: 3px;
+                            width: 8px;
+                        }
+                    }
+                }
+                .buttons_list{
+                    .cart, .user{
+                        img{
+                            width: 15px;
+                        }
+                    }
+                }
+                img{
+                    width: 60%;
+                    height: 45%;
+                }
+            }
+        }
+    }
+
+    //Small screen, laptops
+    @media (max-width: 1024px){
+        .navbar_container{
+            .navbar_item{
+                .pages_list{
+                    li{
+                        font-size: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            margin-left: 3px;
+                            width: 6px;
+                        }
+                    }
+                }
+                .buttons_list{
+                    .cart, .user{
+                        img{
+                            width: 15px;
+                        }
+                    }
+                }
+                img{
+                    width: 60%;
+                    height: 45%;
+                }
+            }
+        }
+    }
+
+    //Small screens, laptop
+    @media (max-width: 790px){
+        .navbar_container{
+            width: 100%;
+            .navbar_item{
+                .pages_list{
+                    li{
+                        font-size: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            margin-left: 3px;
+                            width: 6px;
+                            display: none;
+                        }
+                    }
+                }
+                .buttons_list{
+                    .cart, .user{
+                        img{
+                            width: 15px;
+                        }
+                    }
+                }
+                img{
+                    width: 60%;
+                    height: 45%;
+                }
+            }
         }
     }
 </style>
