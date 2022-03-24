@@ -139,6 +139,7 @@ export default {
                         color: white;
                         font-size: 12px;
                         border-radius: 5px;
+                        cursor: pointer;
                     }
                 }
                 .text > *{

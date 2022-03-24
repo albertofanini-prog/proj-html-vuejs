@@ -3,7 +3,7 @@
         <div class="jumbotron_content">
             <h5>Commence Business</h5>
             <p>Distant Mentoring Program</p>
-            <button>Download free guidebook</button>
+            <button>Download free guidebook <img src="../assets/Icons/right-long-solid.svg"></button>
         </div>
             <div class="right_banner">
                 <button>
@@ -65,6 +65,20 @@ export default {
                 color: #1fad95;
                 font-weight: 600;
                 font-size: 14px;
+                border-radius: 10px;
+                cursor: pointer;
+                img{
+                    width: 10px;
+                    height: 10px;
+                    filter: invert(53%) sepia(82%) saturate(418%) hue-rotate(120deg) brightness(91%) contrast(86%);
+                }
+            }
+            button:hover{
+                color: white;
+                background-color: #1fad95;
+                img{
+                    filter: invert(100%) sepia(100%) saturate(7%) hue-rotate(144deg) brightness(104%) contrast(102%);
+                }
             }
         }
         .right_banner{

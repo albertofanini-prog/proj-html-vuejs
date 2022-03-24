@@ -16,10 +16,10 @@
                     <h6>Brush Strokes Energize Trees In Paintings</h6>
                     <div class="info">
                         <div class="lessons">
-                            May 15, 2020
+                            <img src="../assets/Icons/calendar-days-solid.svg" alt=""> May 15, 2020
                         </div>
                         <div class="subscribes">
-                            688 views
+                            <img src="../assets/Icons/user-solid.svg" alt=""> 688 views
                         </div>
                     </div>
                 </div>
@@ -35,10 +35,10 @@
                     <h6>Pocket-Sized Notebooks Hold Miniature Paintings</h6>
                     <div class="info">
                         <div class="lessons">
-                            May 15, 2020
+                            <img src="../assets/Icons/calendar-days-solid.svg" alt=""> May 15, 2020
                         </div>
                         <div class="subscribes">
-                            603 views
+                            <img src="../assets/Icons/user-solid.svg" alt=""> 603 views
                         </div>
                     </div>
                 </div>
@@ -54,10 +54,10 @@
                     <h6>Connection Between Self-Potraits and Identity</h6>
                     <div class="info">
                         <div class="lessons">
-                            May 15, 2020
+                            <img src="../assets/Icons/calendar-days-solid.svg" alt=""> May 15, 2020
                         </div>
                         <div class="subscribes">
-                            397 views
+                            <img src="../assets/Icons/user-solid.svg" alt=""> 397 views
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,25 @@ export default {
                         > * {
                             width: 50%;
                         }
+                        .lessons{
+                            img{
+                                width: 10px;
+                                margin-right: 5px;
+                            }
+                        }
                     }
+                    .subscribes{
+                        img{
+                            width: 10px;
+                            height: 10px;
+                                margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .artist-card:hover{
+                h6{
+                    color: #1fad95;
                 }
             }
         }

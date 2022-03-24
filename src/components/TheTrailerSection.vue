@@ -153,6 +153,7 @@ export default {
                             box-shadow: 10px;
                             font-size: 12px;
                             box-shadow: 0px 0px 1px 1px black;
+                            cursor: pointer;
                             img{
                                 width: 15px;
                                 height: 10px;

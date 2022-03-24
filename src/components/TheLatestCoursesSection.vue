@@ -19,13 +19,14 @@
                             <img src="../assets/Icons/newspaper-solid.svg" alt=""> 20 Lessons
                         </div>
                         <div class="subscribes">
-                            50 Subscribes
+                            <img src="../assets/Icons/user-solid.svg" alt=""> 50 Subscribes
                         </div>
                     </div>
                 </div>
             </div>
             <div class="course-card">
                 <div class="card-image">
+                    <h5 class="free">Free</h5>
                     <img class="square" src="../assets/course_2.jpg">
                 </div>
                 <div class="card-text">
@@ -38,7 +39,7 @@
                             <img src="../assets/Icons/newspaper-solid.svg" alt=""> 24 Lessons
                         </div>
                         <div class="subscribes">
-                            300 Subscribes
+                            <img src="../assets/Icons/user-solid.svg" alt=""> 300 Subscribes
                         </div>
                     </div>
                 </div>
@@ -57,7 +58,7 @@
                             <img src="../assets/Icons/newspaper-solid.svg" alt=""> 37 Lessons
                         </div>
                         <div class="subscribes">
-                            62 Subscribes
+                            <img src="../assets/Icons/user-solid.svg" alt=""> 62 Subscribes
                         </div>
                     </div>
                 </div>
@@ -137,11 +138,26 @@ export default {
                 .card-image{
                     width: 100%;
                     height: 55%;
+                    position: relative;
                     // border: 2px dashed blue;
                     img{
                         width: 100%;
                         height: 100%;
                         border-radius: 20px 20px 0px 0px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 8;
+                    }
+                    .free{
+                        position: absolute;
+                        z-index: 10;
+                        top: 0;
+                        right: 10%;
+                        padding: 0px 10px;
+                        color: orange;
+                        font-size: 24px;
+                        text-transform: uppercase;
                     }
                 }
                 .card-text{
@@ -173,8 +189,21 @@ export default {
                         .lessons{
                             img{
                                 width: 10px;
+                                margin-right: 5px;
                             }
                         }
+                    }
+                    .subscribes{
+                        img{
+                            width: 10px;
+                            height: 10px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .card-text:hover{
+                    h6{
+                        color: #1fad95;
                     }
                 }
             }
@@ -210,9 +239,11 @@ export default {
                 span{
                     color: black;
                     font-weight: 700;
+                    cursor: pointer;
                     img{
                         width: 10px;
-                        height: 10px;
+                        height: 10px
+                        ;
                     }
                 }
             }

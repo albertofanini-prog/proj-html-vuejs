@@ -2,12 +2,13 @@
     <div class="navbar_container">
         <div class="navbar_item">
             <ul class="pages_list">
-                <li>Home <img src="../assets/Icons/angle-down-solid.svg"> </li>
-                <li>Pages <img src="../assets/Icons/angle-down-solid.svg"></li>
-                <li>Courses <img src="../assets/Icons/angle-down-solid.svg"></li>
-                <li>Features <img src="../assets/Icons/angle-down-solid.svg"></li>
-                <li>Blog <img src="../assets/Icons/angle-down-solid.svg"></li>
-                <li>Shop <img src="../assets/Icons/angle-down-solid.svg"></li>
+                <li
+                v-for="(navbarItem, i) in navbarItems"
+                :key="i"
+                >
+                    {{navbarItem.name}}
+                    <img src="../assets/Icons/angle-down-solid.svg" alt="">
+                </li>
             </ul>
         </div>
         <div class="navbar_item">
@@ -39,8 +40,22 @@ export default {
         return{
             navbarItems:[
                 {
-                    name: 'Home',
-                    pic: '../assets/Icons/angle-down-solid.svg'
+                    name: 'Home'
+                },
+                {
+                    name: 'Pages'
+                },
+                {
+                    name: 'Courses'
+                },
+                {
+                    name: 'Features'
+                },
+                {
+                    name: 'Blog'
+                },
+                {
+                    name: 'Shop'
                 }
             ]
         }
@@ -82,6 +97,7 @@ export default {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    cursor: pointer;
                     img{
                         width: 12px;
                     }
@@ -102,8 +118,10 @@ export default {
                     display: flex;
                     align-items: center;
                     font-size: 14px;
+                    cursor: pointer;
                 }
                 .cart, .user{
+                    cursor: pointer;
                     img{
                         width: 20px;
                     }

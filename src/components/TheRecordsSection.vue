@@ -12,7 +12,7 @@
                             registration deadline. We're opening new classes every
                             beginning of each month. 
                         </p>
-                        <p>Have questions? <span class="water">Get Free Guide</span> <img src="../assets/Icons/right-long-solid.svg"></p>
+                        <p>Have questions? <span class="water">Get Free Guide</span><img src="../assets/Icons/right-long-solid.svg"></p>
                     </div>
                     <div class="circle-place">
                         <img src="../assets/semi-circle.png">
@@ -106,10 +106,14 @@ export default {
                         }
                         p{
                             font-size: 16px;
+                            span{
+                                cursor: pointer;
+                            }
                             img{
                                 width: 15px;
                                 height: 10px;
                                 filter: invert(53%) sepia(82%) saturate(418%) hue-rotate(120deg) brightness(91%) contrast(86%);
+                                cursor: pointer;
                             }
                         }
                     }
